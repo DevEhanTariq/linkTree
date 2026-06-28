@@ -1,5 +1,5 @@
 p {
-    font-family: Google Sans;
+    font-family: Arial;
 }
 
 .artBlock {
@@ -40,6 +40,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menuButton {
@@ -215,4 +216,86 @@ p {
 
 .instaButton:active {
     opacity: 0.5;
+}
+
+.infoBlocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.infoBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+    height: auto;
+    border: solid;
+    border-color: #acacac;
+    border-radius: 15px;
+    border-width: 3px;
+    margin: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.15s;
+}
+
+.infoBlock:hover {
+    width: 70%;
+}
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid;
+    border-color: #acacac;
+    transition: 0.15s;
+}
+
+.circle-img:hover {
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    opacity: 0.8;
+}
+
+.circle-img:active {
+    opacity: 0.5;
+}
+
+.infoText {
+    width: 60%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoPfp {
+    width: 25%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    transition: 0.15s;
+    margin-right: 10px;
+}
+
+.infoTitle {
+    color: black;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.infoDescription {
+    color: #454545;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
